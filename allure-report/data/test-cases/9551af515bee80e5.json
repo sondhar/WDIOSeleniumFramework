@@ -1,0 +1,171 @@
+{
+  "uid" : "9551af515bee80e5",
+  "name" : "Enter the contact details and check if successfully submitted",
+  "fullName" : "Fill Contact Us Form & Validate the Response.Enter the contact details and check if successfully submitted",
+  "historyId" : "1f2f4c108f3587bc72872291b31fe05c",
+  "time" : {
+    "start" : 1639633604208,
+    "stop" : 1639633682496,
+    "duration" : 78288
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given We are in the PractiseForm Page of SeleniumFramework Website",
+      "time" : {
+        "start" : 1639633604211,
+        "stop" : 1639633624616,
+        "duration" : 20405
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I enter the details in the given form",
+      "time" : {
+        "start" : 1639633624616,
+        "stop" : 1639633625459,
+        "duration" : 843
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then I should see text displayed as \"Feedback has been sent to the administrator\"",
+      "time" : {
+        "start" : 1639633625459,
+        "stop" : 1639633627030,
+        "duration" : 1571
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I drag element A to element B",
+      "time" : {
+        "start" : 1639633627030,
+        "stop" : 1639633680386,
+        "duration" : 53356
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then I should find the merged element",
+      "time" : {
+        "start" : 1639633680386,
+        "stop" : 1639633682426,
+        "duration" : 2040
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I click on alert box",
+      "time" : {
+        "start" : 1639633682426,
+        "stop" : 1639633682486,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then I should see alert text",
+      "time" : {
+        "start" : 1639633682486,
+        "stop" : 1639633682493,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Fill Contact Us Form & Validate the Response"
+  }, {
+    "name" : "testClass",
+    "value" : "Fill Contact Us Form & Validate the Response"
+  }, {
+    "name" : "testMethod",
+    "value" : "Enter the contact details and check if successfully submitted"
+  }, {
+    "name" : "package",
+    "value" : "Fill Contact Us Form & Validate the Response"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.93"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9551af515bee80e5.json",
+  "parameterValues" : [ "chrome-96.0.4664.93" ]
+}

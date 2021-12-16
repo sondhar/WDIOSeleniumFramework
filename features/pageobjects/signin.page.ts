@@ -13,6 +13,12 @@ class SignInPage {
     //get draga() {return $("#draga")}
     //get dragb() {return $("#dragb")}
     get alertBox(){return $("//button[@id='alert']")}
+    get newWindow(){return $("//button[@onclick='newBrwWin()']")}
+    get newMessageWindow(){return $("//button[@onclick='newMsgWin()']")}
+    get newTab(){return $("//button[@onclick='newBrwTab()']")}
+    get getMessage(){return $("//body[text()='This message window is only for viewing purposes']")}
+    get pageHeader(){return $("//h2[@class='wpb_heading']")}
+
 
     async homePageLink() { await browser.url("http://www.seleniumframework.com/Practiceform/"); }
 

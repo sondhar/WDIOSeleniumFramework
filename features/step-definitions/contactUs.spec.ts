@@ -11,7 +11,7 @@ When(/^I enter the details in the given form$/, async () => {
 
     await signInPage.name.setValue(faker.name.firstName());
     await signInPage.email.setValue(faker.internet.email());
-    await signInPage.telephone.setValue(faker.phone.phoneNumber());
+    await signInPage.telephone.setValue(myDetails.telephone);
     await signInPage.country.setValue(faker.address.country());
     await signInPage.company.setValue(faker.company.companyName());
     await signInPage.message.setValue(faker.lorem.paragraph());
@@ -34,4 +34,38 @@ When(/^I click on alert box$/, async () => {
 });
 Then(/^I should see alert text$/, async () => {
     await browser.acceptAlert();
+});
+When(/^I click on New Window Button$/, async () => {
+    await signInPage.newWindow.click();
+    const newWindow = await browser.getWindowHandles()
+    await browser.switchToWindow(newWindow[1])
+    //browser.switchWindow('Selenium Framework | Selenium, Cucumber, Ruby, Java et al.');
+});
+Then(/^I should be navigated to "([^\"]*)\"$/, async (baseUrl) => {
+    await expect(browser).toHaveUrl(baseUrl);
+    //await browser.closeWindow();
+    //await browser.switchWindow('Selenium Framework |   Practiceform')
+    const newWindow = await browser.getWindowHandles()
+    await browser.closeWindow()
+    await browser.switchToWindow(newWindow[0])
+
+});
+
+When(/^I click on New Message Window Button$/, async () => {
+    await signInPage.newMessageWindow.click();
+    const newWindow = await browser.getWindowHandles()
+    await browser.switchToWindow(newWindow[1])
+});
+Then(/^I should see message as \"([^\"]*)\"$/, async (sampleMessage) => {
+    await expect(signInPage.getMessage).toHaveText(sampleMessage)
+    const newWindow = await browser.getWindowHandles()
+    await browser.closeWindow()
+    await browser.switchToWindow(newWindow[0])
+});
+When(/^I click on New Browser Tab$/, async () => {
+    await signInPage.newTab.click();
+    browser.switchWindow('Selenium Framework | Selenium, Cucumber, Ruby, Java et al.');
+});
+Then(/^I should be navigated to a page having title as "([^\"]*)\"$/, async (headerUrl) => {
+    await expect(browser).toHaveUrl(headerUrl);
 });
