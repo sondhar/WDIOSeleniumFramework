@@ -1,0 +1,11 @@
+[ {
+  "uid" : "78e42de5e2d0bef5",
+  "name" : "Enter the contact details and check if successfully submitted",
+  "time" : {
+    "start" : 1639633775168,
+    "stop" : 1639633794211,
+    "duration" : 19043
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
