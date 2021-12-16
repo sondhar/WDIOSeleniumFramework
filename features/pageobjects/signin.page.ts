@@ -1,15 +1,20 @@
 class SignInPage {
 
     
-    get name() { return $("//input[@id='form-validation-field-0']") }
-    get email() { return $("//input[@id='form-validation-field-1']") }
-    get telephone() { return $("//input[@id='form-validation-field-2']") }
+    get name() { return $("//input[@class='validate[required]']") }
+    get email() { return $("//input[@class='validate[required,custom[email]]']") }
+    get telephone() { return $("//input[@class='validate[required,custom[phone]]']") }
     get country() { return $("//input[@name='country']") }
     get company() { return $("//input[@name='company']") }
     get message() { return $("//textarea[@name='message']") }
-
+    get submitButton() { return $("//a[@class='dt-btn dt-btn-m dt-btn-submit']") }
     get feedbackText() { return $("//div[@class='formErrorContent']") }
+    get mergedDrag() {return $("#dragb>#draga")}
+    //get draga() {return $("#draga")}
+    //get dragb() {return $("#dragb")}
+    get alertBox(){return $("//button[@id='alert']")}
 
     async homePageLink() { await browser.url("http://www.seleniumframework.com/Practiceform/"); }
+
 }
 export default new SignInPage()

@@ -4,5 +4,10 @@ Feature: Fill Contact Us Form & Validate the Response
 
     Given We are in the PractiseForm Page of SeleniumFramework Website
     When I enter the details in the given form
-    Then I should see text displayed as successfully submitted
+    Then I should see text displayed as "Feedback has been sent to the administrator"
+    When I drag element A to element B
+    Then I should find the merged element
+    When I click on alert box
+    Then I should see alert text
+    
 
