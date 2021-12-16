@@ -21,7 +21,7 @@ export const config: WebdriverIO.Config = {
     // will be called from there.
     //
     specs: [
-        './features/**/login.feature'
+        './features/**/contactUsForm.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -88,7 +88,7 @@ export const config: WebdriverIO.Config = {
     //
     // If you only want to run your tests until a specific amount of tests have failed use
     // bail (default is 0 - don't bail, run all tests).
-    bail: 0,
+    bail: 10,
     //
     // Set a base URL in order to shorten url command calls. If your `url` parameter starts
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
@@ -146,7 +146,7 @@ export const config: WebdriverIO.Config = {
     cucumberOpts: {
         retry: 0,
         // <string[]> (file/dir) require files before executing features
-        require: ['./features/step-definitions/*.ts'],
+        require: ['./features/step-definitions/contactUs.spec.ts'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
