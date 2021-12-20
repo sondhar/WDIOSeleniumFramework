@@ -8,7 +8,6 @@ Given(/^We are in the PractiseForm Page of SeleniumFramework Website$/, async ()
     await browser.maximizeWindow();
 });
 When(/^I enter the details in the given form$/, async () => {
-
     await signInPage.name.setValue(faker.name.firstName());
     await signInPage.email.setValue(faker.internet.email());
     await signInPage.telephone.setValue(myDetails.telephone);
@@ -24,7 +23,6 @@ When(/^I drag element A to element B$/, async () => {
     const elem = await $('#draga')
     const target = await $('#dragb');
     await elem.dragAndDrop(target);
-
 });
 Then(/^I should find the merged element$/, async () => {
     await expect(signInPage.mergedDrag).toBeExisting();
@@ -39,18 +37,13 @@ When(/^I click on New Window Button$/, async () => {
     await signInPage.newWindow.click();
     const newWindow = await browser.getWindowHandles()
     await browser.switchToWindow(newWindow[1])
-    //browser.switchWindow('Selenium Framework | Selenium, Cucumber, Ruby, Java et al.');
 });
 Then(/^I should be navigated to "([^\"]*)\"$/, async (baseUrl) => {
     await expect(browser).toHaveUrl(baseUrl);
-    //await browser.closeWindow();
-    //await browser.switchWindow('Selenium Framework |   Practiceform')
     const newWindow = await browser.getWindowHandles()
     await browser.closeWindow()
     await browser.switchToWindow(newWindow[0])
-
 });
-
 When(/^I click on New Message Window Button$/, async () => {
     await signInPage.newMessageWindow.click();
     const newWindow = await browser.getWindowHandles()
